@@ -98,19 +98,17 @@ System.out.println("3. Récupérer l'argent");
 System.out.println("0. Quitter");
 choix = scanner.nextInt();
 
-switch (choix) {
-case 1:
-recharger();
-break;
-case 2:
-detartrer();
-break;
-case 3:
-recupererArgent();
-break;
-}
+ if (choix == 1) {
+        recharger();
+    }
+    else if (choix == 2) {
+        detartrer();
+    }
+    else if (choix == 3) {
+        recupererArgent();
+    }
+
 } while (choix != 0);
-}
 
 private void recharger() {
 eau = MAX_EAU;
@@ -145,20 +143,19 @@ System.out.println("4. Menu technicien");
 System.out.println("0. Quitter");
 choix = scanner.nextInt();
 
-switch (choix) {
-case 1:
-machine.insererArgent(1.0);
-break;
-case 2:
-machine.commanderCafeCourt();
-break;
-case 3:
-machine.commanderCafeLong();
-break;
-case 4:
-machine.menuTechnicien();
-break;
-}
+if (choix == 1) {
+        machine.insererArgent(1.0);
+    }
+    else if (choix == 2) {
+        machine.commanderCafeCourt();
+    }
+    else if (choix == 3) {
+        machine.commanderCafeLong();
+    }
+    else if (choix == 4) {
+        machine.menuTechnicien();
+    }
+
 } while (choix != 0);
 
 System.out.println("Au revoir !");

@@ -82,7 +82,7 @@ caisse += prix;
 
 compteurCafes++;
 
-if compteurCafes >= LIMITE_USURE {
+if (compteurCafes >= LIMITE_USURE) {
     horsService = true;
 }
 

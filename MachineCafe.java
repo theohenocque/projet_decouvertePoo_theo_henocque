@@ -135,7 +135,9 @@ MachineCafe machine = new MachineCafe();
 Scanner scanner = new Scanner(System.in);
 int choix;
 
-do {
+while (choix != 0) {
+    
+} {
 System.out.println("\n=== MACHINE À CAFÉ ===");
 System.out.println("1. Insérer 1 €");
 System.out.println("2. Café court (1.50 €)");
